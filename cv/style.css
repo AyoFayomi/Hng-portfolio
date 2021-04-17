@@ -108,7 +108,7 @@ nav ul button:hover{
 
 /* Experience section*/
 .skills{
-    margin: 5em auto;
+    margin: 2em auto;
 }
 .skills h2{
     color: #7619f0;
@@ -117,7 +117,7 @@ nav ul button:hover{
     text-align: center;
 }
 .skills ul{
-    width: 60vw;
+    width: 50vw;
     display: flex;
     margin: auto;
 }
@@ -126,7 +126,7 @@ nav ul button:hover{
     margin: 1em;
 }
 .skills ul li img{
-    width: 11em;
+    width: 9em;
     height: 6.5em;
 }
 
@@ -310,19 +310,25 @@ input::placeholder, textarea::placeholder{
     display: flex;
     float: right;
     flex-direction: column;
+    margin: 1em auto;
+}
+.contact-2 h1{
+    margin: .3em auto;
 }
 address{
-    margin: 2em;
+    margin: 1em;
+    
+    line-height: 2.5em;
 }
 .socials{
-    width: 60vw;
+    width: 65vw;
     height: 10vh;
     margin: auto;
 }
 .socials ul{
     display: flex;
     justify-content: start;
-    margin: 2em;
+    margin: auto;
 }
 .socials ul li{
     list-style: none;
@@ -332,8 +338,8 @@ address{
     margin: 0 2em;
 }
 .socials ul li a img{
-    width: 8vw;
-    height: 7vh;
+    width: 7vw;
+    height: 6vh;
 }
 .nod{
     position: absolute;
