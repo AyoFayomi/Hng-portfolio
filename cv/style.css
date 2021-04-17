@@ -208,7 +208,6 @@ nav ul button:hover{
     width: 20em;
     height: 15vh;
     margin: 2em;
-    padding: .3em;
     position: relative;
     border-bottom: 5px solid #7619f0;
     overflow: hidden;
@@ -266,17 +265,17 @@ nav ul button:hover{
     background-color: transparent;
 }
 .name{
-    width: 46.3%;
+    width: 46%;
     display: flex;
     float: left;
 }
 .email{
-    width: 46.2%;
+    width: 46%;
     display: flex;
     float: left;
 }
 .message{
-    width: 75%;
+    width: 73%;
     height: 17vh;
 }
 .form-button{
