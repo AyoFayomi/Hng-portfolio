@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.7em;
+}
+body{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative;
+}
+.navbar{
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    opacity: .8;
+}
+.navbar h1{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 2.5em;
+    color: #7619f0;
+}
+nav ul{
+    width: 30vw;
+    display: flex;
+    float: right;
+    justify-content: space-around;
+    padding: 1.3rem;
+}
+nav ul li{
+    list-style: none;
+    margin-top: .5em;
+    z-index: 1;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    padding: .8rem;
+    transition: .5s ease-in-out;
+}
+nav ul li a:hover{
+    color: #7619f0;
+    border-bottom: 2px solid #7619f0;
+}
+nav ul button{
+    width: 7rem;
+    height: 4.2vh;
+    border: none;
+    border-radius: 1.2em;
+    background-color: #7619f0;
+    color: #f2f2f2;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+nav ul button:hover{
+    border: 3px solid #7619f0;
+    background-color: #f2f2f2;
+    color: #7619f0;
+    transition: .5s ease-in-out;
+}
+
+.container{
+    width: 95vw;
+    margin: auto;
+    margin-top:-1em;
+    flex-wrap: wrap;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/fotis-fotopoulos-DuHKoV44prg-unsplash.png);
+    margin: 1rem auto;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.home-image img{
+    width: 43vw;
+    height: 100vh;
+}
+.home-texts{
+    width: 27em;
+    height: 20em;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(167, 164, 164);
+    opacity: .7;
+    border-radius: 1rem;
+}
+.home-texts h1{
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    padding: .3em;
+    border-bottom: 4px solid #7619f0;
+}
+.home-texts h1 span{
+    color: #7619f0;
+}
+.home-texts p{
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    padding: .3em;
+}
+
+/* Experience section*/
+.skills{
+    margin: 5em auto;
+}
+.skills h2{
+    color: #7619f0;
+    font-size: 2.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.skills ul{
+    width: 60vw;
+    display: flex;
+    margin: auto;
+}
+.skills ul li{
+    list-style: none;
+    margin: 1em;
+}
+.skills ul li img{
+    width: 11em;
+    height: 6.5em;
+}
+
+/* about section*/
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.about-img img{
+    width: 40vw;
+    height: 100%;
+}
+.about-txt{
+    width: 40%;
+    margin: 2rem;
+}
+.about-txt h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #7619f0;
+}
+.about-education{
+    width: 40vw;
+}
+.about-education{
+    margin: 2em 0;
+    color: #7619f0;
+}
+.OOU{
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    border: 2px solid #7619f0;
+    border-radius: 2em;
+    margin: 2em 0;
+    box-shadow: 2px 2px 2px 2px #7619f0;
+}
+.OOU img{
+    width: 35%;
+    height: 90%;
+    border-right: 2px solid #7619f0;
+}
+.OOU-txt{
+    width: 55%;
+    height: 40%;
+    margin: auto;
+    align-items: center;
+}
+.hiit{
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    border: 2px solid #7619f0;
+    border-radius: 2em;
+    margin: 2em 0;
+    box-shadow: 2px 2px 2px 2px #7619f0;
+    overflow: hidden;
+}
+.hiit img{
+    width: 35%;
+    height: 100%;
+    border-right: 2px solid #7619f0;
+}
+.hiit-txt{
+    width: 55%;
+    height: 40%;
+    margin: auto;
+    align-items: center;
+}
+.projects{
+    display: flex;
+}
+.projects h3{
+    color: #7619f0;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.projects-done{
+    width: 20em;
+    height: 15vh;
+    margin: 2em;
+    padding: .3em;
+    position: relative;
+    border-bottom: 5px solid #7619f0;
+    overflow: hidden;
+    cursor: pointer;
+    
+}  
+.projects-done::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #7619f0;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.projects-done:hover::after {
+    top: 0;
+    opacity: 0.6;
+}
+
+.projects-done a button img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Contact section*/
+.contact{
+    width: 75%;
+    height: 50vh;
+    margin: 5em auto;
+    background-color: #dbd1df;
+}
+.contact-1{
+    width: 43vw;
+    float: left;
+    padding: 1em;
+}
+.contact h1{
+    color: #7619f0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name-form{
+    width: 100%;
+    height: 30vh;
+}
+.form-line{
+    height: 8vh;
+    margin: 1em .7em;
+    caret-color: #7619f0;
+    border: none;
+    border-bottom: 2px solid #7619f0;
+    background-color: transparent;
+}
+.name{
+    width: 46.3%;
+    display: flex;
+    float: left;
+}
+.email{
+    width: 46.2%;
+    display: flex;
+    float: left;
+}
+.message{
+    width: 75%;
+    height: 17vh;
+}
+.form-button{
+    width: 6rem;
+    height: 4.8vh;
+    border: none;
+    border-radius: 1.4em;
+    background-color: #7619f0;
+    color: #f2f2f2;
+    margin-right: 1em;
+    cursor: pointer;
+    float: right;
+
+}
+.form-button:hover{
+    border: 3px solid #7619f0;
+    background-color: #f2f2f2;
+    color: #7619f0;
+    transition: .5s ease-in-out;
+}
+input::placeholder, textarea::placeholder{
+    color: #7619f0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact-2{
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    opacity: .8;
+    display: flex;
+    float: right;
+    flex-direction: column;
+}
+address{
+    margin: 2em;
+}
+.socials{
+    width: 60vw;
+    height: 10vh;
+    margin: auto;
+}
+.socials ul{
+    display: flex;
+    justify-content: start;
+    margin: 2em;
+}
+.socials ul li{
+    list-style: none;
+    justify-content: space-around;
+}
+.socials ul li a {
+    margin: 0 2em;
+}
+.socials ul li a img{
+    width: 8vw;
+    height: 7vh;
+}
+.nod{
+    position: absolute;
+    right: 1em;
+    bottom: 2em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50em;
+    background-color: #7619f0;
+    border: none;
+    color: #f2f2f2;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.nod:hover{
+    border: 4px solid #7619f0;
+    background-color: #f2f2f2;
+    color: #7619f0;
+}
