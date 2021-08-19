@@ -62,31 +62,33 @@ nav ul button:hover{
 }
 
 .container{
-    width: 95vw;
+    width: 99.1vw;
     margin: auto;
     margin-top:-1em;
     flex-wrap: wrap;
+    background-color: red;
 }
 .home{
     width: 100%;
     height: 100vh;
-    background: url(./img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg);
+    background: url(./img/fotis-fotopoulos-DuHKoV44prg-unsplash.svg);
     margin: 1rem auto;
     background-size:  cover;
     background-repeat: no-repeat;
     display: flex;
 }
 .home-image img{
-    width: 43vw;
+    width: 40vw;
     height: 100vh;
+    border-radius: 1em 0em 0em 1em;
 }
 .home-texts{
     width: 27em;
     height: 20em;
     margin: auto;
     align-items: center;
-    background-color: rgb(167, 164, 164);
-    opacity: .7;
+    background-color: rgb(255, 255, 255);
+    opacity: .5;
     border-radius: 1rem;
 }
 .home-texts h1{
@@ -108,41 +110,51 @@ nav ul button:hover{
 
 /* Experience section*/
 .skills{
+    width: 85%;
     margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
 }
-.skills h2{
+.skills div{
+    width: 25vw;
+}
+.skills-h2{
     color: #7619f0;
     font-size: 2.3em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 .skills ul{
-    width: 50vw;
-    display: flex;
+    width: 90vw;
     margin: auto;
 }
 .skills ul li{
     list-style: none;
     margin: 1em;
 }
-.skills ul li img{
-    width: 9em;
-    height: 6.5em;
+
+progress[value]{
+    width: 23%;
+    height: 1.2em;
+    margin-top: 1em;
+    margin-left: .5em;
+    
 }
 
 /* about section*/
 .about{
-    width: 100%;
+    width: 95%;
     height: 100vh;
     display: flex;
+    margin: auto;
 }
 .about-img img{
-    width: 40vw;
+    width: 50vw;
     height: 100%;
 }
 .about-txt{
-    width: 40%;
-    margin: 2rem;
+    width: 30%;
+    margin: 2em;
 }
 .about-txt h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -152,67 +164,66 @@ nav ul button:hover{
     width: 40vw;
 }
 .about-education{
-    margin: 2em 0;
+    margin: 1em 0;
     color: #7619f0;
 }
 .OOU{
-    width: 90%;
+    width: 80%;
     height: 15vh;
     display: flex;
     border: 2px solid #7619f0;
     border-radius: 2em;
-    margin: 2em 0;
+    margin: 1em 0;
     box-shadow: 2px 2px 2px 2px #7619f0;
 }
 .OOU img{
     width: 35%;
-    height: 90%;
+    height: 100%;
     border-right: 2px solid #7619f0;
 }
 .OOU-txt{
-    width: 55%;
-    height: 40%;
+    text-align: center;
+    align-self: center;
     margin: auto;
-    align-items: center;
 }
 .hiit{
-    width: 90%;
-    height: 15vh;
+    width: 80%;
+    height: 14vh;
     display: flex;
-    border: 2px solid #7619f0;
-    border-radius: 2em;
-    margin: 2em 0;
+    border: 1px solid #7619f0;
+    border-radius: 1em;
+    margin: 1em 0;
     box-shadow: 2px 2px 2px 2px #7619f0;
     overflow: hidden;
 }
 .hiit img{
     width: 35%;
-    height: 100%;
+    height:100%;
     border-right: 2px solid #7619f0;
 }
 .hiit-txt{
-    width: 55%;
-    height: 40%;
+    text-align: center;
+    align-self: center;
     margin: auto;
-    align-items: center;
-}
-.projects{
-    display: flex;
 }
 .projects h3{
     color: #7619f0;
     font-size: 1.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.prjct{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .projects-done{
-    width: 20em;
-    height: 15vh;
-    margin: 2em;
+    width: 20%;
+    height: 10vh;
+    margin: 1em;
     position: relative;
-    border-bottom: 5px solid #7619f0;
+    border-bottom: 8px solid #7619f0;
     overflow: hidden;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }  
 .projects-done::after {
     content: '';
