@@ -370,7 +370,6 @@ address{
     height: 5vh;
     margin: auto;
     display: flex;
-    background-color: #0080ff;
     justify-content: center;
 }
 .socials ul{
@@ -488,10 +487,9 @@ address{
     .skills{
         width: 94%;
         margin: auto;
-        background-color: #0080ff;
     }
     .about-img{display: none;}
-    .about-txt, .about-education, .projects{width: 95%; margin: auto; color: #000000;}
+    .about-txt, .about-education, .projects{width: 95%; margin: auto;}
     .about-education{
         font-size: 18px;
         display: flex;
@@ -499,7 +497,7 @@ address{
         justify-content: center;
     }
     .projects-done{
-        height: 14vh;
+        height: 11vh;
         width: 23%;
         margin: 2px;
     }
