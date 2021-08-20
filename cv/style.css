@@ -199,8 +199,8 @@ progress[value]{
     color: var(--primaryColor);
 }
 .OOU{
-    width: 80%;
-    height: 15vh;
+    width: 85%;
+    height: 6em;
     display: flex;
     border: 2px solid var(--primaryColor);
     border-radius: 2em;
@@ -208,7 +208,7 @@ progress[value]{
     box-shadow: 2px 2px 2px 2px var(--primaryColor);
 }
 .OOU img{
-    width: 30%;
+    width: 35%;
     height: 100%;
     border-right: 2px solid var(--primaryColor);
 }
@@ -218,8 +218,8 @@ progress[value]{
     margin: auto;
 }
 .hiit{
-    width: 80%;
-    height: 14vh;
+    width: 85%;
+    height: 6em;
     display: flex;
     border: 1px solid var(--primaryColor);
     border-radius: 1em;
