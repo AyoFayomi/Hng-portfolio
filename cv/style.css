@@ -1,3 +1,7 @@
+:root {
+    --primaryColor: #0080ff;
+    --white: #ffffff;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -42,26 +46,26 @@ nav ul li a{
     color: #101010;
     font-size: 1rem;
     padding: .8rem;
-    transition: .5s ease-in-out;
+    transition: .5s ease;
 }
 nav ul li a:hover{
-    color: #7619f0;
-    border-bottom: 2px solid #7619f0;
+    color: var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
 }
 nav ul button{
     width: 7rem;
     height: 4.2vh;
     border: none;
     border-radius: 1.2em;
-    background-color: #7619f0;
+    background-color: var(--primaryColor);
     color: #f2f2f2;
     margin: 0 1rem;
     cursor: pointer;
 }
 nav ul button:hover{
-    border: 3px solid #7619f0;
+    border: 3px solid var(--primaryColor);
     background-color: #f2f2f2;
-    color: #7619f0;
+    color: var(--primaryColor);
     transition: .5s ease-in-out;
 }
 .hamburger {
@@ -110,10 +114,10 @@ nav ul button:hover{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     padding: .3em;
-    border-bottom: 4px solid #7619f0;
+    border-bottom: 4px solid var(--primaryColor);
 }
 .home-texts h1 span{
-    color: #7619f0;
+    color: var(--primaryColor);
 }
 .home-texts p{
     font-size: 1.3em;
@@ -133,7 +137,7 @@ nav ul button:hover{
     width: 25em;
 }
 .skills-h2{
-    color: #7619f0;
+    color: var(--primaryColor);
     font-size: 2.3em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -174,28 +178,28 @@ progress[value]{
 }
 .about-txt h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #7619f0;
+    color: var(--primaryColor);
 }
 .about-education{
     width: 40vw;
 }
 .about-education{
     margin: 1em 0;
-    color: #7619f0;
+    color: var(--primaryColor);
 }
 .OOU{
     width: 80%;
     height: 15vh;
     display: flex;
-    border: 2px solid #7619f0;
+    border: 2px solid var(--primaryColor);
     border-radius: 2em;
     margin: 1em 0;
-    box-shadow: 2px 2px 2px 2px #7619f0;
+    box-shadow: 2px 2px 2px 2px var(--primaryColor);
 }
 .OOU img{
     width: 30%;
     height: 100%;
-    border-right: 2px solid #7619f0;
+    border-right: 2px solid var(--primaryColor);
 }
 .OOU-txt{
     text-align: center;
@@ -206,16 +210,16 @@ progress[value]{
     width: 80%;
     height: 14vh;
     display: flex;
-    border: 1px solid #7619f0;
+    border: 1px solid var(--primaryColor);
     border-radius: 1em;
     margin: 1em 0;
-    box-shadow: 2px 2px 2px 2px #7619f0;
+    box-shadow: 2px 2px 2px 2px var(--primaryColor);
     overflow: hidden;
 }
 .hiit img{
     width: 30%;
     height:100%;
-    border-right: 2px solid #7619f0;
+    border-right: 2px solid var(--primaryColor);
 }
 .hiit-txt{
     text-align: center;
@@ -229,7 +233,7 @@ progress[value]{
     justify-content: space-between;
 }
 .projects h3{
-    color: #7619f0;
+    color: var(--primaryColor);
     font-size: 1.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -240,9 +244,9 @@ progress[value]{
 }
 .projects-done{
     width: 17%;
-    height: 14vh;
+    height: 13vh;
     position: relative;
-    border-bottom: 8px solid #7619f0;
+    border-bottom: 8px solid var(--primaryColor);
     overflow: hidden;
     cursor: pointer; 
 }  
@@ -253,7 +257,7 @@ progress[value]{
     left: 0;
     height: 100%;
     width: 100%;
-    background: #7619f0;
+    background: var(--primaryColor);
     opacity: 0;
     transition: .5s ease-in-out;
 }
@@ -271,9 +275,10 @@ progress[value]{
 /* Contact section*/
 .contact{
     width: 70%;
-    height: 50vh;
+    height: 60vh;
     margin: 5em auto;
-    background-color: #dbd1df;
+    background-color: #e5edf5;
+    display: flex;
 }
 .contact-1{
     width: 43vw;
@@ -281,7 +286,7 @@ progress[value]{
     padding: 1em;
 }
 .contact h1{
-    color: #7619f0;
+    color: var(--primaryColor);
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -292,9 +297,9 @@ progress[value]{
 .form-line{
     height: 8vh;
     margin: 1em .7em;
-    caret-color: #7619f0;
+    caret-color: var(--primaryColor);
     border: none;
-    border-bottom: 2px solid #7619f0;
+    border-bottom: 2px solid var(--primaryColor);
     background-color: transparent;
 }
 .name{
@@ -316,7 +321,7 @@ progress[value]{
     height: 4.8vh;
     border: none;
     border-radius: 1.4em;
-    background-color: #7619f0;
+    background-color: var(--primaryColor);
     color: #f2f2f2;
     margin-right: 1em;
     cursor: pointer;
@@ -324,25 +329,24 @@ progress[value]{
 
 }
 .form-button:hover{
-    border: 3px solid #7619f0;
+    border: 3px solid var(--primaryColor);
     background-color: #f2f2f2;
-    color: #7619f0;
+    color: var(--primaryColor);
     transition: .5s ease-in-out;
 }
 input::placeholder, textarea::placeholder{
-    color: #7619f0;
+    color: var(--primaryColor);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .contact-2{
-    width: 20vw;
-    height: 40vh;
+    width: 40%;
+    height: 70%;
     text-align: center;
     align-items: center;
-    opacity: .8;
     display: flex;
-    float: right;
     flex-direction: column;
-    margin: 1em auto;
+    justify-content: center;
+    margin: auto;
 }
 .contact-2 h1{
     margin: .3em auto;
