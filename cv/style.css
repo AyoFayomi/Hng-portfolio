@@ -15,11 +15,10 @@ body{
     background-color: #f2f2f2;
     opacity: .8;
 }
-.navbar h1{
-    font-style: italic;
-    font-family: cursive;
-    font-size: 2.5em;
-    color: #7619f0;
+.navbar .logo{
+    width: 75px;
+    height: 70px;;
+    margin: .3em;
 }
 nav ul{
     width: 30vw;
@@ -60,7 +59,19 @@ nav ul button:hover{
     color: #7619f0;
     transition: .5s ease-in-out;
 }
+.hamburger {
+    display: none;
+}
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
 .container{
     width: 99.1vw;
     margin: auto;
@@ -109,13 +120,13 @@ nav ul button:hover{
 
 /* Experience section*/
 .skills{
-    width: 85%;
-    margin: 2em auto;
+    width: 60%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
 .skills div{
-    width: 25vw;
+    width: 25em;
 }
 .skills-h2{
     color: #7619f0;
@@ -124,16 +135,18 @@ nav ul button:hover{
     text-align: center;
 }
 .skills ul{
-    width: 90vw;
+    width: 100%;
     margin: auto;
 }
 .skills ul li{
     list-style: none;
-    margin: 1em;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
 }
 
 progress[value]{
-    width: 23%;
+    width: 90%;
     height: 1.2em;
     margin-top: 1em;
     margin-left: .5em;
@@ -176,7 +189,7 @@ progress[value]{
     box-shadow: 2px 2px 2px 2px #7619f0;
 }
 .OOU img{
-    width: 35%;
+    width: 30%;
     height: 100%;
     border-right: 2px solid #7619f0;
 }
@@ -196,7 +209,7 @@ progress[value]{
     overflow: hidden;
 }
 .hiit img{
-    width: 35%;
+    width: 30%;
     height:100%;
     border-right: 2px solid #7619f0;
 }
@@ -204,6 +217,12 @@ progress[value]{
     text-align: center;
     align-self: center;
     margin: auto;
+}
+.projects{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .projects h3{
     color: #7619f0;
@@ -216,9 +235,8 @@ progress[value]{
     justify-content: space-between;
 }
 .projects-done{
-    width: 20%;
-    height: 10vh;
-    margin: 1em;
+    width: 17%;
+    height: 14vh;
     position: relative;
     border-bottom: 8px solid #7619f0;
     overflow: hidden;
@@ -248,7 +266,7 @@ progress[value]{
 
 /* Contact section*/
 .contact{
-    width: 75%;
+    width: 70%;
     height: 50vh;
     margin: 5em auto;
     background-color: #dbd1df;
@@ -260,6 +278,7 @@ progress[value]{
 }
 .contact h1{
     color: #7619f0;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .name-form{
@@ -286,7 +305,7 @@ progress[value]{
 }
 .message{
     width: 73%;
-    height: 17vh;
+    height: 21vh;
 }
 .form-button{
     width: 6rem;
@@ -325,29 +344,28 @@ input::placeholder, textarea::placeholder{
     margin: .3em auto;
 }
 address{
-    margin: 1em;
+    margin: .5em;
     
-    line-height: 2.5em;
+    line-height: 1.3em;
 }
 .socials{
-    width: 65vw;
+    width: 55vw;
     height: 10vh;
     margin: auto;
 }
 .socials ul{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     margin: auto;
 }
 .socials ul li{
     list-style: none;
-    justify-content: space-around;
 }
 .socials ul li a {
     margin: 0 2em;
 }
 .socials ul li a img{
-    width: 7vw;
+    width: 3vw;
     height: 6vh;
 }
 .nod{
@@ -368,4 +386,33 @@ address{
     border: 4px solid #7619f0;
     background-color: #f2f2f2;
     color: #7619f0;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    ul.active {
+        left: 0;
+    }
+
+    nav ul li{
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
 }
