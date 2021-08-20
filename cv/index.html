@@ -10,22 +10,29 @@
 </head>
 <body>
     <header id="nod">
-        <div class="navbar">
-            <a href="http://internship.zuri.team/ target="_blank" rel="noopener noreferrer"><img src="./img/logo.png" alt="" class="logo"></a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#abt">About</a>
-                    </li>
-                    <li>
-                        <a href="#con">Contact</a>
-                    </li>
-                    <a href="http://wa.link/ijisoc" target="_blank" rel="noopener noreferrer"><button type="submit">Hire Me</button></a>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="menu-icon-wrapper">
+            <div class="menu-icon" onclick="toggleCssMenu(this)">
+                <div class="three-line">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cssmenu">
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="btn"><a href="#"><button>Hire me</button></a></li>
+            </ul>
+        </div>
+    
         </div>
     </header>
 
@@ -138,6 +145,7 @@
                 </div>
                 <a href="http://" target="_blank" rel="noopener noreferrer"></a><button type="submit" class="form-button">Send</button>
             </div>
+            
             <div class="contact-2">
                 <h1>Address</h1>
                 <address>
@@ -145,7 +153,7 @@
                     Ikosi-ketu <br>
                     Lagos state.
                 </address>
-                <h1>Email Address</h1>
+                <h1>Email</h1>
                 <p>Storario2@gmail.com</p>
                 
                 <h1>Phone number</h1>
@@ -172,14 +180,26 @@
                     <a href="https://web.facebook.com/ayomide.ojo.543"><img src="img/Facebook-logo.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/iam_chodez/"><img src="img/insta.png" alt=""></a>
-                </li>
-                <li>
                     <a href="https://twitter.com/Dev_Ayoo"><img src="img/twitter-seeklogo.com.svg" alt=""></a>
                 </li>
             </ul>
             
         </div>
     </div>
+    <script>
+        function toggleCssMenu(icon) {
+            var cssmenu = document.getElementById('cssmenu');
+            if (icon.className.indexOf('active') == -1) {
+                icon.className = 'menu-icon active';
+                cssmenu.style.display = "block";
+                setTimeout(function(){cssmenu.className = 'active';},0);            
+            }
+            else {
+                icon.className = 'menu-icon';
+                cssmenu.className = '';
+                setTimeout(function(){cssmenu.style.display = "none";},411); 
+            }
+        }
+    </script>
 </body>
 </html>
