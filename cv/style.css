@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #0080ff;
     --secondaryColor: #ffffff;
-  }
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body{
     position: relative;
 }
 #nod{
-    width: 98vw;
+    width: 99.8vw;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -71,9 +71,6 @@ body{
 }
 
 
-/*Top level items
----------------------------------------*/
-
 #cssmenu >ul>li>span, #cssmenu >ul>li>a{   
     font-size:22px;
     color:inherit;
@@ -91,6 +88,22 @@ body{
 }
 .menu-icon-wrapper {
     display: none;
+}
+li a button{
+    font-size: 15px;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    height: 2.8em;
+    width: 8.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 1em;
+    transition: 700ms ease;
+}
+li a button:hover{
+    background-color: #ffffff;
+    border: .2em solid var(--primaryColor);
+    color: var(--primaryColor);
 }
 .container{
     width: 99.1vw;
@@ -366,7 +379,7 @@ address{
     margin: .5em;
 }
 .socials{
-    width: 90%;
+    width: 99%;
     height: 5vh;
     margin: auto;
     display: flex;
@@ -381,7 +394,7 @@ address{
     display: inline-block;
 }
 .socials ul li a {
-    margin: 0 1em;
+    margin: 0 3em;
 }
 .socials ul li a img{
     width: 3em;
@@ -425,11 +438,12 @@ address{
     #cssmenu  {
         width:100%;
         display:none;
-        background-color: var(--primaryColor);
+        background-color: var(--secondaryColor);
         border:1px solid rgba(0,0,0,0.2);
         box-sizing:border-box;
         z-index:999999990;
         opacity: .9;
+        padding: 5em;
     }
 
     /*--begin mark1--*/
@@ -471,17 +485,17 @@ address{
         position:static;
     }
 
-    #cssmenu >ul>li>span, #cssmenu >ul>li>a 
-    {       
+    #cssmenu >ul>li>span, #cssmenu >ul>li>a {       
         font-size:32px;
+        margin: 1em 0;
     }
     #cssmenu li:hover span, #cssmenu li:hover a {
-        color:var(--secondaryColor);
+        color:var(--primaryColor);
         border: none;
     }
     .home-image{display: none;}
     .home{
-        width: 97%;
+        width: 98%;
         margin: auto;
     }
     .home-texts{
@@ -502,11 +516,14 @@ address{
     }
     .projects-done{
         height: 11vh;
-        width: 23%;
+        width: 8em;
         margin: 2px;
     }
     .socials{
-        width: 90%;
+        width: 99%;
+    }
+    .socials ul li a {
+        margin: 1em;
     }
     .contact{
         width: 95%;
@@ -523,9 +540,7 @@ address{
         width: 90%;
         height: 5vh;
     }
-    .form-button{
-        margin-top: 2em;
-    }
+    .form-button{margin-top: 2em;}
 }
 /*----------- menu-icon ----------------*/
 .menu-icon-wrapper {
@@ -533,10 +548,10 @@ address{
     text-align:right;
 }
 .menu-icon {
-    padding:9px;
+    padding:5px;
     cursor: pointer;
     outline: none;
-    background-color:var(--primaryColor);
+    background-color:var(--secondaryColor);
     border:1px solid transparent;
     border-radius:3px;
     transition: all 0.25s ease-out;
@@ -557,7 +572,7 @@ address{
   font-size: 0;
 }
 .three-line span{
-  background-color:#FFFFFF;
+  background-color: var(--primaryColor);
   position: absolute;
   border-radius: 2px;
   transition: transform .5s ease-in-out;
