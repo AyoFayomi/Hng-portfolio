@@ -203,7 +203,7 @@ progress[value]{
     height: 6em;
     display: flex;
     border: 2px solid var(--primaryColor);
-    border-radius: 2em;
+    border-radius: 1em;
     margin: 1em 0;
     box-shadow: 2px 2px 2px 2px var(--primaryColor);
 }
